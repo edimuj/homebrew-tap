@@ -5,21 +5,21 @@
 class ClaudeRig < Formula
   desc "Run multiple Claude Code configurations side by side"
   homepage "https://github.com/edimuj/claude-rig"
-  version "0.23.0"
+  version "0.24.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/edimuj/claude-rig/releases/download/v0.23.0/claude-rig_darwin_amd64.tar.gz"
-      sha256 "e83e333a28739c10f9c46535a277e9385fd76e71a6b46f82ea53858010cb8c9d"
+      url "https://github.com/edimuj/claude-rig/releases/download/v0.24.0/claude-rig_darwin_amd64.tar.gz"
+      sha256 "1767239a14e3896ea77c8efd1d014f0c13ccf60bc76714d4e43076a86527d55a"
 
       define_method(:install) do
         bin.install "claude-rig"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/edimuj/claude-rig/releases/download/v0.23.0/claude-rig_darwin_arm64.tar.gz"
-      sha256 "868c3895df9e856c6f3b757d1da229ee291e2f739310b052621699ba076580db"
+      url "https://github.com/edimuj/claude-rig/releases/download/v0.24.0/claude-rig_darwin_arm64.tar.gz"
+      sha256 "9a5512df69881d70cd9652c05713c216800cf493f24bf751bd72111efcf33ae7"
 
       define_method(:install) do
         bin.install "claude-rig"
@@ -29,15 +29,15 @@ class ClaudeRig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edimuj/claude-rig/releases/download/v0.23.0/claude-rig_linux_amd64.tar.gz"
-      sha256 "d276a7da33900c486ed099e9681f3a8dcefaf902465d4c7fcc02bc5672e18562"
+      url "https://github.com/edimuj/claude-rig/releases/download/v0.24.0/claude-rig_linux_amd64.tar.gz"
+      sha256 "47d1dfb50818a1ed0915152d71703b26e7030cd258b477b5e2fda3a3dbd8da4b"
       define_method(:install) do
         bin.install "claude-rig"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edimuj/claude-rig/releases/download/v0.23.0/claude-rig_linux_arm64.tar.gz"
-      sha256 "3acf5eda492743730804379f4c5cc30ab8f7207e101d7180921fec32190782a7"
+      url "https://github.com/edimuj/claude-rig/releases/download/v0.24.0/claude-rig_linux_arm64.tar.gz"
+      sha256 "daa85a6df1b54ea8a34610f5bcb4d94a288083afe5842c8854181697d18d78c0"
       define_method(:install) do
         bin.install "claude-rig"
       end
